@@ -89,6 +89,7 @@ function detector(options) {
 
     if (state === 'follow') {
       client.right(-xPID.pid().sum);
+      client.front(0.1);
     } else {
       client.stop();
     }

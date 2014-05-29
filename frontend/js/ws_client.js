@@ -94,3 +94,7 @@ WsClient.prototype.right = function(val) {
 WsClient.prototype.stop = function() {
   this._send(['stop']);
 };
+
+WsClient.prototype.front = function(val) {
+    this._send(['front', val]);
+};
